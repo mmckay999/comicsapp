@@ -1,0 +1,32 @@
+<%= form_with(model: comic, local: true) do |form| %>
+  <% if comic.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(comic.errors.count, "error") %> prohibited this comic from being saved:</h2>
+
+      <ul>
+      <% comic.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title, id: :comic_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :issue %>
+    <%= form.text_field :issue, id: :comic_issue %>
+  </div>
+
+  <div class="field">
+    <%= form.label :publisher %>
+    <%= form.text_field :publisher, id: :comic_publisher %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
