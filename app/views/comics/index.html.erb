@@ -1,9 +1,8 @@
 <p id="notice"><%= notice %></p>
-
-<h1>Mike's Comics</h1>
-
-<%= form_for "",url: comics_path, role: "search", method: :get do %>
- <%= text_field_tag :search, @seach_term,placeholder: "Search" %>
+<div class= 'container'>
+  <%= form_for "",url: comics_path, role: "search", method: :get do %>
+  <%= text_field_tag :search, @seach_term,placeholder: "Search by Title" %>
+</div>
 <% end %>
 
 <table>
@@ -30,4 +29,4 @@
 
 <br>
 
-<%= link_to 'New Comic', new_comic_path(@comics) %>
+
