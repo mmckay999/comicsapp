@@ -11,20 +11,22 @@
     </div>
   <% end %>
 
-  <div class="field">
+ 
+  <div style="min-width: 100%">
     <%= form.label :title %>
     <%= form.text_field :title, id: :comic_title %>
   </div>
 
-  <div class="field">
+  <div>
     <%= form.label :issue %>
     <%= form.text_field :issue, id: :comic_issue %>
   </div>
 
-  <div class="field">
+  <div>
     <%= form.label :publisher %>
     <%= form.text_field :publisher, id: :comic_publisher %>
   </div>
+ 
 
   <div class="actions">
     <%= form.submit %>

@@ -7,6 +7,7 @@
 
 html {
   height: 100%;
+
 }
 
 body {
@@ -17,17 +18,6 @@ body {
   font-size: 13px;
   line-height: 18px;
 }
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-
-.clearfix:after{
-  clear: both;
-}
-
 
 .navbar-default{
   background-color: #E7E4E3;
@@ -53,6 +43,7 @@ body {
   padding: 20px;
   color: #5299FA !important;
 }
+
 
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
@@ -80,12 +71,11 @@ a {
 
 th {
   padding-bottom: 5px;
-  padding-top: 5px;
-  padding: 10px;
+  padding-left: 4px;
 }
 
 td {
-  padding: 0 10px 2px;
+  padding: 0 5px 5px;
 }
 
 tr:nth-child(even) {
@@ -96,6 +86,7 @@ div {
   &.field, &.actions {
     margin-bottom: 10px;
   }
+
 }
 
 #notice {
